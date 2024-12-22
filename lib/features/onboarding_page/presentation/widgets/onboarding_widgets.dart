@@ -1,8 +1,8 @@
 import 'package:crypto_wallet/core/commons/widgets/app_button.dart';
+import 'package:crypto_wallet/core/routes/app_routes_names.dart';
 import 'package:crypto_wallet/core/utils/color_res.dart';
 import 'package:crypto_wallet/core/utils/image_res.dart';
 import 'package:crypto_wallet/core/utils/text_res.dart';
-import 'package:crypto_wallet/features/home_page/view/home_page.dart';
 import 'package:crypto_wallet/features/onboarding_page/presentation/widgets/page_container.dart';
 import 'package:crypto_wallet/features/onboarding_page/provider/dot_index_provider.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +68,7 @@ class OnboardingWidgets extends ConsumerWidget {
             curve: Curves.bounceInOut,
           );
         } else {
-          Get.to(HomePage());
+          Get.to(AppRoutesNames.homePageRoute);
         }
       },
       child: Center(
