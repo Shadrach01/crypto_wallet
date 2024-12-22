@@ -68,7 +68,7 @@ class OnboardingWidgets extends ConsumerWidget {
             curve: Curves.bounceInOut,
           );
         } else {
-          Get.to(AppRoutesNames.homePageRoute);
+          Get.toNamed(AppRoutesNames.homePageRoute);
         }
       },
       child: Center(
